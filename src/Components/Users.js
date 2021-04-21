@@ -32,7 +32,7 @@ class Users extends Component {
 
     // get data 
     componentDidMount() {
-        axios.get('http://localhost:3000/api/signup')
+        axios.get('http://localhost:3003/api/signup')
             .then(response => {
                 this.setState({ list: response.data });
                 console.log(response)

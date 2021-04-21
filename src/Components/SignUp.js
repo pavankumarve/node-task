@@ -22,7 +22,7 @@ const SignUp = (props) => {
                 console.log(values)
 
                 // post data
-                axios.post('http://localhost:3000/api/signup', values)
+                axios.post('http://localhost:3003/api/signup', values)
                     .then(res => {
                         console.log(res);
                         if (res.status === 200) {
@@ -100,7 +100,7 @@ const SignUp = (props) => {
 
                                 <Grid item xs={12} sm={6} >
                                     <TextField
-                                        error={errors.lastName}
+                                        error={errors.lastName && touched.lastName}
                                         className={errors.lastName && touched.lastName && 'error'}
                                         id="lastName" helperText={errors.lastName && touched.lastName && errors.firstName}
                                         value={values.lastName} onChange={handleChange} onBlur={handleBlur} label="Last Name*" variant="outlined" />
@@ -112,7 +112,7 @@ const SignUp = (props) => {
                         <div className='emailpass'>
                             <Grid item xs={12}  >
                                 <TextField
-                                    error={errors.emailId}
+                                    error={errors.emailId && touched.emailId}
                                     id="emailId" className={errors.emailId && touched.emailId && 'error'}
                                     helperText={errors.emailId && touched.emailId && errors.emailId}
                                     value={values.emailId} onChange={handleChange} onBlur={handleBlur} className='email' label="Email Id*" variant="outlined" />
@@ -128,7 +128,7 @@ const SignUp = (props) => {
                                 </Grid>
                                 <Grid item xs={12} sm={6} >
                                     <TextField
-                                        error={errors.gender}
+                                        error={errors.gender && touched.gender}
                                         id="gender" className={errors.gender && touched.gender && 'error'}
                                         helperText={errors.gender && touched.gender && errors.gender}
                                         value={values.gender} onChange={handleChange} onBlur={handleBlur} label="gender*" variant="outlined" />
@@ -140,7 +140,7 @@ const SignUp = (props) => {
                         <div className='emailpass'>
                             <Grid item xs={12}  >
                                 <TextField
-                                    error={errors.password}
+                                    error={errors.password && touched.password}
                                     id="password" type='password' className={errors.password && touched.password && 'error'}
                                     helperText={errors.password && touched.password && errors.password}
                                     value={values.password} onChange={handleChange} onBlur={handleBlur} className='email' label="Password*" variant="outlined" />

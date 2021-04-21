@@ -51,7 +51,7 @@ router.route('/signup').post((req, res) => {
 // get data 
 router.route('/signup').get((req, res) => {
     console.log(res.body);
-    userData.find()
+    user.find()
         .then(data => {
             res.json(data);
         })
