@@ -1,0 +1,36 @@
+.form {
+    align-items: center;
+    margin: 2% 30% 2% 30%;
+    padding: 2% 2% 2% 2%;
+}
+.form h1 {
+    align-items: center;
+    margin: 2% 28% 2% 40%;
+    padding: 3% 4% 3% 4%;
+    text-align: center;
+}
+.signup-icon {
+    margin: 0% 0% -6% 54%;
+}
+.textbox{
+    margin: 2% 2% 2% 2%;
+}
+.flname {
+    margin: 2% 8% 2% 19%;
+}
+.emailpass{
+    margin: 2% 8% 2% 19%;   
+}
+.email{
+    width: 100%;
+}
+
+.dob{
+    margin: 2% 3% 2% 20%;
+}
+.dobgender{
+    margin: 2% 8% 2% 19%;
+}
+.btn {
+    margin: 2% 45% 2% 45%;
+}
