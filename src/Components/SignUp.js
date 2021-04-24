@@ -26,7 +26,7 @@ const SignUp = (props) => {
                     .then(res => {
                         console.log(res);
                         if (res.status === 200) {
-                            alert('Login Sucess');
+                            alert('SignUp Sucess');
                             history.push('/Home')
                             window.location.reload();
                             setSubmitting(false);
